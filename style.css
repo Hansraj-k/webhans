@@ -1,0 +1,359 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	cursor: url("c2.png"), auto;
+}
+/*----------Header CSS-----------*/
+#header{
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/background.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.user-box{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+.user-box img{
+	border-radius: 50%;
+	width: 250px;
+	border: 2px solid #6caed5;
+}
+.user-box h1{
+	color: #fff;
+	font-weight: bold;
+	margin: 10px
+}
+.user-box p{
+	color: #fff;
+}
+.scroll-btn{
+	bottom: 30px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 2px solid #fff;
+	padding: 10px 10px 20px;
+	border-radius: 30px;
+}
+.scroll-bar span{
+	border: 2px solid #fff;
+	font-size: 10px;
+	border-radius: 30px;	
+}
+.scroll-bar{
+	animation: mover 1s infinite alternate;
+}
+@keyframes mover{
+	0%{transform: translateY(0);}
+	100%{transform: translateY(10px);}
+}
+/*-------------About----------*/
+.about{
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+.profile-img{
+	height: 400px;
+}
+
+.nav-bar{
+	top: 0;
+	position: sticky;
+	z-index: 2;
+	cursor: url("c1.png"), auto;
+}
+.navbar{
+	background: black;
+}
+.navbar-brand img{
+	height: 100px;
+	background: black;
+}
+.nav-bar .fa-bars{
+	font-size: 35px;
+	color: #fff;
+}
+.navbar-toggler{
+	outline: none !important;
+}
+.navbar-nav{
+	float: right;
+	text-align: right;
+}
+.nav-link{
+	color: #fff !important;
+}
+.skills-bar p{
+	margin-bottom: 6px;
+}
+.progress{
+	border-radius: 16px;
+	margin-bottom: 10px;
+}
+.progress-bar{
+	border-radius: 16px;
+	background: black !important;
+}
+/*--------- testimonial ---------*/
+#slider{
+   margin-top: 15%;
+}
+.img-area{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+}
+.img-area img{
+  width: 100%;
+}
+.content{
+ text-align: center;
+ padding: 40px;
+ color: #fff;
+ border-radius: 25px;
+}
+.content h2{
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.content p{
+	line-height: 1.9;
+}
+/*-----------Resume-----------*/
+.resume{
+	padding-top: 50px;
+	padding-bottom: 30px;
+	background: white;
+}
+.resume h3{
+	margin-bottom: 50px;
+}
+.timeline{
+	list-style-type: none;
+	position: relative;
+}
+.timeline:before{
+	content: '';
+	background: #555;
+	display: inline-block;
+	position: absolute;
+	left: 29px;
+	width: 2px;
+	height: 100%;
+	z-index: 1;
+}
+.timeline li{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	background: #fff;
+}
+.timeline li h4{
+	background-color: #000;
+	padding: 5px 0 5px 20px;
+	color: #fff;
+	font-size: 15px;
+}
+.timeline li h4 span{
+	font-weight: bold;
+	color: #fff;
+}
+.timeline li:before{
+	content: '';
+	background: #fff;
+	display: inline-block;
+	position: absolute;
+	border-radius: 50%;
+	border: 3px solid #000;
+	left: 20px;
+	width: 20px;
+	height: 20px;
+	z-index: 1;
+}
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+ 
+.demo{ background: #f8f8f8; }
+.testimonial{
+    margin: 0 20px 40px;
+}
+.testimonial .testimonial-content{
+    padding: 35px 25px 35px 50px;
+    margin-bottom: 35px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    position: relative;
+}
+.testimonial .testimonial-content:after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    bottom: -10px;
+    left: 22px;
+    transform: rotate(45deg);
+}
+.testimonial-content .testimonial-icon{
+    width: 50px;
+    height: 45px;
+    background: #ff4242;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    line-height: 42px;
+    position: absolute;
+    top: 37px;
+    left: -19px;
+}
+.testimonial-content .testimonial-icon:before{
+    content: "";
+    border-bottom: 16px solid #e41212;
+    border-left: 18px solid transparent;
+    position: absolute;
+    top: -16px;
+    left: 1px;
+}
+.testimonial .description{
+    font-size: 15px;
+    font-style: italic;
+    color: #8a8a8a;
+    line-height: 23px;
+    margin: 0;
+}
+.testimonial .title{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #525252;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+}
+.testimonial .post{
+    display: block;
+    font-size: 14px;
+    color: #ff4242;
+}
+.owl-theme .owl-controls{
+    margin-top: 20px;
+}
+.owl-theme .owl-controls .owl-page span{
+    background: #ccc;
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #ff4242;
+}
+.center{
+	text-align: center;
+}
+/*-----------Contact-----------*/
+.contact{
+	padding-top: 50px;
+	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/background.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	cursor: url("c1.png"), auto;
+}
+.contact .row{
+	padding: 30px 0;
+	font-size: 22px;
+}
+.contact .col-md-4 .fa{
+	padding: 10px;
+	font-size: 30px;
+}
+.contact .btn{
+	padding: 10px 25px 10px 25px;
+	margin: 5px;
+	border-radius: 30px;
+	border: 2px solid #fff;
+	background: transparent;
+}
+.contact .btn:focus{
+	box-shadow: none !important;
+}
+.contact .btn:hover{
+	border: 2px solid #000 !important;
+	background: #000 !important;
+	transition: 0.6s; 
+}
+.contact .btn .fa{
+	margin-right: 10px;
+}
+.col-md-4{
+	color: white;
+}
+.footer{
+	background: black;
+	height: 50px;
+	margin-top: 50px;
+	color: #fff;
+	padding-top: 10px;
+}
+/*-----------Social-icons-----------*/
+.social-icons{
+	top: 50%;
+	transform: translateY(-50%);
+	position: sticky;
+	z-index: 1;
+	width: 80px;
+}
+.social-icons ul{
+	padding: initial;
+}
+.social-icons ul li{
+	height: 40px;
+	width: 40px;
+	list-style-type: none;
+	padding-left: 12px;
+	padding-top: 6px;
+	margin-top: 5px;
+	color: #fff;
+	background: #000;+
+}
+.social-icons ul li:hover{
+	padding-left: 30px;
+	width: 80px;
+	transition: 1s; 
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+    right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: white;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 20px;
+	height: 40px;
+	width: 40px;
+	box-shadow: 5px 1px 2px black; 
+}
+
+#myBtn:hover {
+  background-color: white;
+  box-shadow: 4px 1px 10px #dc8c8c;
+}
