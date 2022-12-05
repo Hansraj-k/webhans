@@ -44,6 +44,23 @@
 		::-webkit-scrollbar-thumb:hover {
 		  background: black; 
 		}
+		li .tooltiptext {
+			  visibility: hidden;
+			  width: 120px;
+			  background-color: black;
+			  color: #fff;
+			  text-align: center;
+			  border-radius: 6px;
+			  padding: 5px 0;
+
+			  /* Position the tooltip */
+			  position: absolute;
+			  z-index: 1;
+			}
+
+		li:hover .tooltiptext {
+			  visibility: visible;
+			}
 	</style>
 	<script>
   	document.addEventListener ('contextmenu', (e)=>{
@@ -114,7 +131,7 @@
 		<a href="https://twitter.com/Hansraj96942646?s=08"><li><i class="fa fa-twitter"></i></li></a>
 		<a href="https://www.facebook.com/profile.php?id=100058292060153"><li><i class="fa fa-facebook"></i></li></a>
 		<a href="https://www.instagram.com/hansraj_kondeda/?r=nametag"><li><i class="fa fa-instagram"></i></li></a>
-		<a id="shareBtn"><li><i class="fa fa-share" id="share">SHARE</i></li/a>
+		<a id="shareBtn"><li><i class="fa fa-share" id="share"></i><span class="tooltiptext">Tooltip text</span></li/a>
 	</ul>
 </div>
 <!------------Resume----------->
