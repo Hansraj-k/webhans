@@ -3,7 +3,7 @@
 Social Share Links:
 
 WhatsApp:
-https://wa.me/?text=[post-title] [post-url]
+https://wa.me/?text=[visit our site] [post-url]
 
 */
 
